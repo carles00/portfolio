@@ -6,27 +6,88 @@
   grid-template-rows: 100vh 100vh;
 }
 
-.first-page{
+
+.first-page {
   grid-row: 1/2;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.greetings{
+.greetings {
   grid-column: 1/2;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
+  
 }
 
-.profile{
+.profile {
   grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  filter: drop-shadow(var(--primary) 0rem 0rem 1rem);
+}
+
+.links {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 3rem;
+  gap: 3rem;
 }
 
-.profilePicture{
-  border-radius: 50%;
-  filter: drop-shadow(var(--primary-color) 0rem 0rem 1rem);
+.links a {
+  transition: 0.1s;
+  filter: drop-shadow(var(--primary) 0rem 0rem 1rem);
+}
+
+.links a:hover {
+  transform: scale(1.2);
+}
+
+.linkedin:hover {
+  transition: 0.1s;
+  filter: drop-shadow(var(--linkedin) 0rem 0rem 1rem);
+}
+
+.github:hover {
+  transition: 0.1s;
+  filter: drop-shadow(var(--github) 0rem 0rem 1rem);
+}
+
+.gmail:hover {
+  transition: 0.1s;
+  filter: drop-shadow(var(--gmail) 0rem 0rem 1rem);
+}
+
+@keyframes appear-left-animation {
+  0% {left: -500px; color: transparent;}
+  100% { left: 0px;}
+}
+
+@keyframes appear-right-animation {
+  0% {left: 500px; color: transparent;}
+  100% { left: 0px;}
+}
+
+.appear-left{
+  position: relative;
+  animation-name: appear-left-animation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.appear-right{
+  position: relative;
+  animation-name: appear-right-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }

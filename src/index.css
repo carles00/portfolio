@@ -5,7 +5,12 @@
   font-weight: 400;
   color: white;
   
-  --primary-color: #4f46e4;
+  --primary: #1e1e1e;
+  --secondary: #F8F32B;
+  --highlight: #00ac72;
+  --linkedin: #0A66C2;
+  --github: #ffffff;
+  --gmail: #c5221f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,18 +33,18 @@ html, body {
 
   background: 
     -webkit-radial-gradient(100% 0, circle farthest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 100%), 
-    -webkit-repeating-linear-gradient(0deg, var(--primary-color) 0, var(--primary-color) 1px, transparent 0, transparent 50%), 
-    -webkit-repeating-linear-gradient(90deg, var(--primary-color) 0, var(--primary-color) 1px, transparent 0, transparent 50%), 
-    rgba(6,4,33,1);
+    -webkit-repeating-linear-gradient(0deg, var(--primary) 0, var(--primary) 1px, transparent 0, transparent 50%), 
+    -webkit-repeating-linear-gradient(90deg, var(--primary) 0, var(--primary) 1px, transparent 0, transparent 50%), 
+    var(--secondary);
   background: -moz-radial-gradient(100% 0, circle farthest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 100%), 
-    -moz-repeating-linear-gradient(90deg, var(--primary-color) 0, var(--primary-color) 1px, transparent 0, transparent 50%), 
-    -moz-repeating-linear-gradient(0deg, var(--primary-color) 0, var(--primary-color) 1px, transparent 0, transparent 50%),
-     rgba(6,4,33,1);
+    -moz-repeating-linear-gradient(90deg, var(--primary) 0, var(--primary) 1px, transparent 0, transparent 50%), 
+    -moz-repeating-linear-gradient(0deg, var(--primary) 0, var(--primary) 1px, transparent 0, transparent 50%),
+    var(--secondary);
   background: 
     radial-gradient(circle farthest-corner at 100% 0, rgba(0,0,0,0) 0, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 100%), 
-    repeating-linear-gradient(90deg, var(--primary-color) 0, var(--primary-color) 1px, transparent 0, transparent 50%), 
-    repeating-linear-gradient(0deg, var(--primary-color) 0, var(--primary-color) 1px, transparent 0, transparent 50%), 
-    rgba(6,4,33,1);
+    repeating-linear-gradient(90deg, var(--primary) 0, var(--primary) 1px, transparent 0, transparent 50%), 
+    repeating-linear-gradient(0deg, var(--primary) 0, var(--primary) 1px, transparent 0, transparent 50%), 
+    var(--secondary);
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
@@ -77,6 +82,11 @@ article{
   font-size: 2rem;
 }
 
+a{
+  margin: 0;
+  padding: 0;
+}
+
 .highlight{
-  color: var(--primary-color);
+  color: var(--secondary);
 }
