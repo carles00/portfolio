@@ -4,13 +4,12 @@
   width: 100%;
   display: grid;
   grid-template-rows: 100vh 100vh;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--primary);
 }
 
-
-.first-page {
-  grid-row: 1/2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.presentation {
+  font-size: 2rem;
 }
 
 .greetings {
@@ -19,7 +18,6 @@
   align-items: center;
   justify-content: center;
   padding: 3rem;
-  
 }
 
 .profile {
@@ -29,11 +27,11 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  background: var(--secondary);
 }
 
 .profilePicture {
   border-radius: 50%;
-  filter: drop-shadow(var(--primary) 0rem 0rem 1rem);
 }
 
 .links {
@@ -46,26 +44,10 @@
 
 .links a {
   transition: 0.1s;
-  filter: drop-shadow(var(--primary) 0rem 0rem 1rem);
 }
 
 .links a:hover {
-  transform: scale(1.2);
-}
-
-.linkedin:hover {
-  transition: 0.1s;
-  filter: drop-shadow(var(--linkedin) 0rem 0rem 1rem);
-}
-
-.github:hover {
-  transition: 0.1s;
-  filter: drop-shadow(var(--github) 0rem 0rem 1rem);
-}
-
-.gmail:hover {
-  transition: 0.1s;
-  filter: drop-shadow(var(--gmail) 0rem 0rem 1rem);
+  transform: scale(1.1);
 }
 
 @keyframes appear-left-animation {
@@ -90,4 +72,48 @@
   animation-name: appear-right-animation;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+}
+
+.cv{
+  grid-row: 2/3;
+}
+
+.experience{
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+.card{
+  background-color: var(--secondary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 70%;
+} 
+
+.card-divider{
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  border: none;
+}
+
+.card-body{
+  width: 100%;
+}
+
+.card-body-title{
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.professional{
+  grid-column: 2/3;
 }
