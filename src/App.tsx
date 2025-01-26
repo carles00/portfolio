@@ -1,18 +1,20 @@
+import { useTranslation } from "react-i18next";
 import "./App.css";
 import profilePicture from "./assets/profile.jpeg";
 import Github from "./svgs/Github";
 import Gmail from "./svgs/Gmail";
 import LinkedIn from "./svgs/Linkedin";
-import { useTranslation } from "react-i18next";
 
 function App() {
   const {t} = useTranslation();
-
   return (
     <>
-      <section className="greetings">
-        <p className="appear-left presentation">
-          {t('presentationText')}
+      <section className="presentation">
+        <span className="presentation__title">
+          {t('title')}
+        </span>
+        <p className="presentation__text appear-left ">
+            "Hi! My name is  <span className="highlight">Carles</span> and I am a FrontendDeveloper"
         </p>
         <div></div>
       </section>

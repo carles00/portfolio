@@ -8,16 +8,22 @@
   background-color: var(--primary);
 }
 
-.presentation {
-  font-size: 2rem;
-}
 
-.greetings {
+.presentation {
   grid-column: 1/2;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 3rem;
+}
+
+.presentation__title{
+  font-size: 3em;
+}
+
+.presentation__text {
+  font-size: 2rem;
 }
 
 .profile {
