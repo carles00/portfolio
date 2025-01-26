@@ -3,18 +3,20 @@ import profilePicture from "./assets/profile.jpeg";
 import Github from "./svgs/Github";
 import Gmail from "./svgs/Gmail";
 import LinkedIn from "./svgs/Linkedin";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const {t} = useTranslation();
+
   return (
     <>
-      <article className="greetings">
+      <section className="greetings">
         <p className="appear-left presentation">
-          Hi! My name is <b className="highlight">Carles</b> and I am a Frontend
-          Developer
+          {t('presentationText')}
         </p>
         <div></div>
-      </article>
-      <article className="profile">
+      </section>
+      <section className="profile">
         <img
           className="profilePicture"
           src={profilePicture}
@@ -39,8 +41,8 @@ function App() {
             <Gmail />
           </a>
         </div>
-      </article>
-      <article className="experience">
+      </section>
+      <section className="experience">
           <div className="card">
             <h2 className="card-title">Experience</h2>
             <hr className="card-divider"/>
@@ -62,8 +64,8 @@ function App() {
               </p>
             </div>
           </div>
-      </article>
-      <article className="professional"></article>
+      </section>
+      <section className="professional"></section>
     </>
   );
 }
