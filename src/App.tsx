@@ -1,73 +1,16 @@
-import { useTranslation } from "react-i18next";
-import "./App.css";
-import profilePicture from "./assets/profile.jpeg";
-import Github from "./svgs/Github";
-import Gmail from "./svgs/Gmail";
-import LinkedIn from "./svgs/Linkedin";
+import Links from "./components/Links";
+import Presentation from "./components/Presentation";
+import Experience from "./components/Experience";
 
 function App() {
-  const {t} = useTranslation();
+  
   return (
     <>
-      <section className="presentation">
-        <span className="presentation__title">
-          {t('title')}
-        </span>
-        <p className="presentation__text appear-left ">
-            "Hi! My name is  <span className="highlight">Carles</span> and I am a FrontendDeveloper"
-        </p>
-        <div></div>
-      </section>
-      <section className="profile">
-        <img
-          className="profilePicture"
-          src={profilePicture}
-          alt="Carles Gallardo Ramirez"
-        />
-        <div className="links">
-          <a
-            className="linkedin"
-            href="https://www.linkedin.com/in/carles-gallardo-ramirez/"
-            target="_blank"
-          >
-            <LinkedIn />
-          </a>
-          <a
-            className="github"
-            href="https://github.com/carles00"
-            target="_blank"
-          >
-            <Github />
-          </a>
-          <a className="gmail" href="mailto:carles.gallardo00@gmail.com">
-            <Gmail />
-          </a>
-        </div>
-      </section>
-      <section className="experience">
-          <div className="card">
-            <h2 className="card-title">Experience</h2>
-            <hr className="card-divider"/>
-            <div className="card-body">
-              <p className="card-body-title">Frontend Developer at Itequia, 2023 - Present</p>
-              <p>
-              Started the development of Akute, a CRM Saas. Developed as a SPA using React, I was responsible for the architecture of the frontend, setting up the test environment using Jest and creating CI/CD pipelines.
-              At TeamInsights I was responsible for the migration of the website to a modern standard using Angular, making sure to follow best practices and writing clean and maintainable code. During this time I improved the load time of the website as well as improved the developer experience by creating highly reusable components.
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <h2 className="card-title">Education</h2>
-            <hr className="card-divider"/>
-            <div className="card-body">
-              <p className="card-body-title">Universitat Pompeu Fabra, 2018 - 2023</p>
-              <p>
-                Bachelor's degree in Computer Engineering
-              </p>
-            </div>
-          </div>
-      </section>
-      <section className="professional"></section>
+      <div className="flex flex-col mt-30">
+        <Presentation/>
+        <Links/>
+        <Experience/>
+      </div>
     </>
   );
 }

@@ -1,0 +1,10 @@
+{
+  "title": "Frontend Developer",
+  "presentation1": "Hola! Soy",
+  "presentation2": "y soy un desarrollador de frontend",
+  "work": "Experiencia",
+  "itequia": "Desarrollador de software",
+  "itequiaText":"Participé en el desarrollo de Akute, un SaaS para la administración de empresas .Desarrollado como SPA usando React, fui responsable de la arquitectura del frontend, la configuración del el entorno de test usando Jest y la creación de las pipelines de CI/CD. En TeamInsights fui responsable de la migración del sitio a Angular, asegurándome de seguir las mejores prácticas y escribir código limpio y mantenible. Durante este tiempo mejoré el tiempo de carga de la web y también mejoré la experiencia de desarrollo mediante la creación de componentes altamente reutilizables.",
+  "education": "Formación",
+  "degree": "Grado en Ingeniería en Informática"
+}
