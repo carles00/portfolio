@@ -1,6 +1,7 @@
 import Links from "./components/Links";
 import Presentation from "./components/Presentation";
 import Experience from "./components/Experience";
+import Technologies from "./components/Technologies";
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
         <Presentation/>
         <Links/>
         <Experience/>
+        <Technologies/>
       </div>
     </>
   );

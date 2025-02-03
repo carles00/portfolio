@@ -3,8 +3,10 @@
   "presentation1": "Hi! I'm",
   "presentation2": "and I am a frontend developer",
   "work": "Work",
-  "itequiaText":"Participé en el desarrollo de Akute, un SaaS para la administración de empresas .Desarrollado como SPA usando React, fui responsable de la arquitectura del frontend, la configuración del el entorno de test usando Jest y la creación de las pipelines de CI/CD. En TeamInsights fui responsable de la migración del sitio a Angular, asegurándome de seguir las mejores prácticas y escribir código limpio y mantenible. Durante este tiempo mejoré el tiempo de carga de la web y también mejoré la experiencia de desarrollo mediante la creación de componentes altamente reutilizables.",
   "itequia": "Software Developer",
+  "itequiaText":"Participé en el desarrollo de Akute, un SaaS para la administración de empresas .Desarrollado como SPA usando React, fui responsable de la arquitectura del frontend, la configuración del el entorno de test usando Jest y la creación de las pipelines de CI/CD. En TeamInsights fui responsable de la migración del sitio a Angular, asegurándome de seguir las mejores prácticas y escribir código limpio y mantenible. Durante este tiempo mejoré el tiempo de carga de la web y también mejoré la experiencia de desarrollo mediante la creación de componentes altamente reutilizables.",
+  "itequiaTime": "2023 - Present",
   "education": "Education",
-  "degree": "Bachelor's degree in Computer Engineering"
+  "degree": "Bachelor's degree in Computer Engineering",
+  "stack":"My stack"
 }
