@@ -12,7 +12,7 @@ export default function Experience() {
   const isEducationVisible = useIsVisible(educationRef);
 
   return (
-    <div className="mt-50 flex flex-col">
+    <div className="mt-70 flex flex-col">
       <div className="grid grid-cols-2">
         <div ref={workRef} className={`col-start-1 flex flex-col gap-5 p-5 transition-opacity ease-in duration-700 opacity-0 ${isWorkVisible? 'opacity-100' : 'opacity-0'}`}>
           <span className="flex items-center gap-5 text-4xl font-extrabold">

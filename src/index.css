@@ -29,4 +29,20 @@ html, body {
   'opsz' 24
 }
 
+.custom-scroll::-webkit-scrollbar { 
+  background-color: oklch(0.147 0.004 49.25);
+  color: white;
+  height: 10px;
+} 
+
+.custom-scroll::-webkit-scrollbar-track { 
+  /* Personaliza la pista de la barra de desplazamiento */ 
+} 
+
+.custom-scroll::-webkit-scrollbar-thumb { 
+  /* Personaliza la miniatura de la barra de desplazamiento */ 
+  background-color: oklch(0.704 0.14 182.503);
+  height: 5px;
+}
+
 
