@@ -2,6 +2,7 @@ import Links from "./components/Links";
 import Presentation from "./components/Presentation";
 import Experience from "./components/Experience";
 import Technologies from "./components/Technologies";
+import Projects from "./components/Projects";
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
         <Links/>
         <Experience/>
         <Technologies/>
+        <Projects/>
       </div>
     </>
   );
