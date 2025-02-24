@@ -1,49 +1,50 @@
 import { useTranslation } from "react-i18next";
 import profilePicture from "../assets/profile.jpeg";
-import { useState } from "react";
 import Icon from "./Icon";
 
-interface Props{
-  ref: React.RefObject<HTMLElement | null>
+import pdfEN from "../assets/data/cv_en.pdf"
+import pdfES from "../assets/data/cv_es.pdf"
+
+interface Props {
+  ref: React.RefObject<HTMLElement | null>;
 }
 
-export default function Presentation({ref}: Props) {
+export default function Presentation({ ref }: Props) {
   const { t } = useTranslation();
-  const [showAboutMe, setShowAboutMe] = useState(false);
-
-  const toggleShowAboutMe = () => {
-    setShowAboutMe((currentValue) => !currentValue);
-  };
 
   return (
     <section ref={ref} className="row-start-1 grid h-full grid-cols-[3fr_2fr]">
-      <div className="col-start-1 flex flex-col justify-center gap-2 px-10">
-        <span className="text-5xl font-extrabold text-amber-600">
-          {t("title")}
-        </span>
-        <span className="text-2xl text-neutral-50">
-          {t("presentation1")}{" "}
-          <span
-            onClick={() => toggleShowAboutMe()}
-            className="inline-flex items-center font-bold text-amber-600 hover:cursor-pointer"
+      <div className="col-start-1 flex flex-col  p-10">
+        <div className="flex flex-3 flex-col gap-3 justify-center">
+          <span className="text-5xl font-extrabold text-amber-600">
+            {t("title")}
+          </span>
+          <span className="text-2xl text-neutral-50">
+            {t("presentation1")}{" "}
+            <span className="inline-flex items-center font-bold text-amber-600">
+              Carles
+            </span>{" "}
+            {t("presentation2")}
+          </span>
+        </div>
+        <div className="flex gap-5 text-stone-50">
+          <a
+            className="flex items-center justify-center hover:text-amber-600"
+            href={pdfEN}
+            download="Carles Gallardo CV"
           >
-            Carles
-            <Icon
-              name="keyboard_arrow_down"
-              className={`transition-transform ${showAboutMe ? "rotate-180" : ""}`}
-            />
-          </span>{" "}
-          {t("presentation2")}
-        </span>
-        <div className="relative flex">
-          <div
-            className={`absolute rounded-2xl border border-stone-800 p-3 text-neutral-50 ${showAboutMe ? "flex" : "hidden"}`}
+            Download CV (ENG) <Icon name="download" className="" />
+          </a>
+          <a
+            className="flex items-center justify-center hover:text-amber-600"
+            href={pdfES}
+            download="Carles Gallardo CV"
           >
-            Hi hello wassup
-          </div>
+            Descargar CV (ES) <Icon name="download" className="" />
+          </a>
         </div>
       </div>
-      <div className="col-start-2 flex justify-center items-center">
+      <div className="col-start-2 flex items-center justify-center">
         <div>
           <img
             className="rounded-full object-scale-down"

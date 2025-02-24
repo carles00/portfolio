@@ -1,20 +1,22 @@
 import { ReactNode } from "react";
+import Icon from "./Icon";
 
 interface Props {
   children: ReactNode;
   title: string;
-  subtitle?: string;
+  location?: string;
   timeRange?: ReactNode;
 }
 
-export default function Card({ children, title, subtitle, timeRange }: Props) {
+export default function Card({ children, title, location, timeRange }: Props) {
   return (
     <div className="flex flex-col divide-y-6 divide-amber-900 rounded-2xl bg-stone-900 border border-stone-800 p-5">
       <div className="flex flex-col pb-3">
         <span className="text-3xl font-bold text-amber-600">{title}</span>
-        {subtitle && (
-          <span className="text-2xl font-semibold text-amber-700">
-            {subtitle}
+        {location && (
+          <span className="text-2xl font-semibold text-amber-700 flex items-center gap-2">
+            <Icon name="pin_drop"/>
+            {location}
           </span>
         )}
         {timeRange && (
