@@ -35,14 +35,27 @@ html, body {
   height: 10px;
 } 
 
-.custom-scroll::-webkit-scrollbar-track { 
-  /* Personaliza la pista de la barra de desplazamiento */ 
-} 
-
 .custom-scroll::-webkit-scrollbar-thumb { 
   /* Personaliza la miniatura de la barra de desplazamiento */ 
-  background-color: oklch(0.704 0.14 182.503);
+  background-color: oklch(0.666 0.179 58.318);
+  border-radius: 10px;
   height: 5px;
+}
+
+.timeline{
+  width: 100%;
+  height: 100%;
+}
+
+.timeline::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--color-amber-900);
+  top: 2.5rem;
+  bottom: 2.5rem;
+  left: 50%;
+  margin-left: -3px;
 }
 
 

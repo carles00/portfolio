@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 const LinkedIn = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    className="fill-teal-500"
+    className="fill-amber-600"
     width="1em"
     height="1em"
     xmlns="http://www.w3.org/2000/svg"

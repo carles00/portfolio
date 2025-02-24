@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 const Github = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    className="fill-teal-500"
+    className="fill-amber-600"
     viewBox="0 0 256 250"
     width="1em"
     height="1em"

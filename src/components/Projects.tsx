@@ -1,35 +1,52 @@
-import { useRef } from "react";
-import { useIsVisible } from "../hooks/useVisible";
 import Icon from "./Icon";
 import { useTranslation } from "react-i18next";
 import Card from "./Card";
 
-export default function Projects() {
-  const ref = useRef(null);
-  const isVisible = useIsVisible(ref);
-  const { t } = useTranslation();
+interface ProjectData{
+  title: string,
+  descriptionKey: string,
+}
 
+interface Props{
+  ref: React.RefObject<HTMLDivElement | null>;
+  isVisible: boolean
+}
+
+export default function Projects({ref, isVisible}:Props) {
+  const { t } = useTranslation();
+  const projects : ProjectData[] = [
+    {
+      title: 'Portfolio',
+      descriptionKey: 'portfolio'
+    },
+    {
+      title: 'Blocker',
+      descriptionKey: 'blocker'
+    }
+  ]
   return (
     <div
       ref={ref}
-      className={`mt-8 flex flex-col transition-opacity duration-700 ease-in ${isVisible ? "opacity-100" : "opacity-0"}`}
+      className={`row-start-4 p-10 flex flex-col transition-opacity duration-700 ease-in ${isVisible ? "opacity-100" : "opacity-0"}`}
     >
       <span className="flex items-center gap-5 text-4xl font-extrabold">
         <Icon name="folder" className="text-stone-50" />
         <span className="text-stone-50">{t("projects")}</span>
       </span>
       <div className="mt-5 flex flex-col items-center gap-5">
-        <div className="w-3/4">
-          <Card title="Portfolio">
-            <div>hola</div>
-          </Card>
-        </div>
-        <div className="w-3/4">
-          <Card title="Bloker">
-            <div>hola</div>
-          </Card>
-        </div>
+        {projects.map(p => <Project key={p.title} {...p}/>)}
       </div>
     </div>
   );
+}
+
+function Project({title, descriptionKey}: ProjectData){
+  const { t } = useTranslation();
+  return(
+    <div className="w-3/4">    
+      <Card title={title}>
+        <p>{t(descriptionKey)}</p>      
+      </Card>
+    </div>
+  )
 }
