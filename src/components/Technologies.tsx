@@ -65,19 +65,17 @@ export default function Technologies({ ref, isVisible }: Props) {
         <Icon name="stacks" className="text-stone-50" />
         <span className="text-stone-50">{t("stack")}</span>
       </span>
-      <div className="flex w-full justify-center">
-        <div className="flex w-[80%] flex-col gap-5">
-          <TechnologiesReel
-            technologies={frontend}
-            title="Frontend"
-            iconName="web"
-          />
-          <TechnologiesReel
-            technologies={backend}
-            title="Backend"
-            iconName="host"
-          />
-        </div>
+      <div className="flex flex-col gap-5 w-full justify-center">
+        <TechnologiesReel
+          technologies={frontend}
+          title="Frontend"
+          iconName="web"
+        />
+        <TechnologiesReel
+          technologies={backend}
+          title="Backend"
+          iconName="host"
+        />
       </div>
     </div>
   );
@@ -99,7 +97,7 @@ function TechnologiesReel({
         <Icon name={iconName} className="text-amber-600" />
         <span>{title}</span>
       </span>
-      <div className="flex w-full snap-end flex-wrap gap-5 pb-5">
+      <div className="custom-scroll flex w-full snap-x gap-5 overflow-auto pb-5">
         {technologies.map((tech) => (
           <Technology key={tech.name} name={tech.name}>
             <span className="text-5xl">{tech.logo}</span>

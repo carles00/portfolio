@@ -31,7 +31,14 @@ export default function Experience({ ref, isVisible }: Props) {
               </>
             }
           >
-            <div>{t("itequiaText")}</div>
+            <div>
+              <p>{t("itequiaText")}</p>
+              <ul className="list-disc ps-5">
+                <li className="mt-1">{t("itequiaText2")}</li>
+                <li className="mt-1">{t("itequiaText3")}</li>
+                <li className="mt-1">{t("itequiaText4")}</li>
+              </ul>
+            </div>
           </Card>
         </div>
         <div className="col-start-2 flex flex-col gap-10 p-5">
@@ -49,7 +56,67 @@ export default function Experience({ ref, isVisible }: Props) {
               </>
             }
           >
-            <div>...</div>
+            <div>
+              <p className="">{t("upfText")}</p>
+              <ul className="list-disc ps-5">
+                <li className="mt-1">
+                  <span className="flex items-center gap-2">
+                    {t("thesis")}
+                    <a
+                      className="inline-flex text-amber-600"
+                      href="https://github.com/FuBIntLab/OpenVR_HMD-less_Tracking_Library"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon name="link" />
+                      OpenVR HMD-less tracking
+                    </a>
+                  </span>
+                </li>
+                <li className="mt-1">
+                  <span className="flex items-center gap-2">
+                    {t('videogame')}
+                    <a
+                      className="inline-flex text-amber-600"
+                      href="https://github.com/carles00/Metal-Birlant"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon name="link" />
+                      Metal Birlant
+                    </a>
+                  </span>
+                </li>
+                <li className="mt-1">
+                  <span className="inline-flex items-center gap-2">
+                    {t('3dChat')}
+                    <a
+                      className="inline-flex text-amber-600"
+                      href="https://github.com/carles00/3D-chat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon name="link" />
+                      3D chat
+                    </a>
+                  </span>
+                </li>
+                <li className="mt-1">
+                  <span className="flex items-center gap-2">
+                    {t('videogame')}
+                    <a
+                      className="inline-flex text-amber-600"
+                      href="https://github.com/andreucastano01/TJE_Framework"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon name="link" />
+                      Racing game using an OpenGL engine.
+                    </a>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </Card>
         </div>
       </div>

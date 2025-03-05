@@ -86,7 +86,7 @@ export default function Projects({ ref, isVisible }: Props) {
 function Project({ title, descriptionKey, image, technologies }: ProjectData) {
   const { t } = useTranslation();
   return (
-    <div className="w-3/4">
+    <div className="w-full">
       <Card title={title}>
         <div className="flex gap-2">
           <div className="flex flex-3 flex-col justify-between gap-10 text-lg">
