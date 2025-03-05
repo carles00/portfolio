@@ -4,7 +4,10 @@
   "presentation2": "and I am a frontend developer",
   "work": "Work",
   "itequia": "Software Developer",
-  "itequiaText":"Participé en el desarrollo de Akute, un SaaS para la administración de empresas .Desarrollado como SPA usando React, fui responsable de la arquitectura del frontend, la configuración del el entorno de test usando Jest y la creación de las pipelines de CI/CD. En TeamInsights fui responsable de la migración del sitio a Angular, asegurándome de seguir las mejores prácticas y escribir código limpio y mantenible. Durante este tiempo mejoré el tiempo de carga de la web y también mejoré la experiencia de desarrollo mediante la creación de componentes altamente reutilizables.",
+  "itequiaText":"At Itequia, I work on multiple projects as a frontend and full-stack developer.",
+  "itequiaText2":"Develop and maintain our client's existing websites, making sure to deliver clean and scalable code in a timely manner.",
+  "itequiaText3":"Developer at Team Insights, a platform that enables HR departments to collect and analyze employee engagement metrics.",
+  "itequiaText4":"Develop Itequia's internal tools and services to automate daily workflows such as task management or invoice creation.",
   "itequiaTime": "2023 - Present",
   "education": "Education",
   "degree": "Bachelor's degree in Computer Engineering",
@@ -12,5 +15,10 @@
   "projects" : "My Projects",
   "portfolio": "This portfolio is the main way to get to my projects, show my resume and, get in contact with me.",
   "projectTech": "Developed using:",
-  "blocker": "Blocker will be a place for climbers to upload the problems they have tried at the gym, check their progress as they improve, and share their accomplishments with their friends."
+  "blocker": "Blocker will be a place for climbers to upload the problems they have tried at the gym, check their progress as they improve, and share their accomplishments with their friends.",
+  "upfText":"During my time at university, I specialised in web technologies and 3D graphics. Here are some of the projects that I did during the courses.",
+  "thesis": "My thesis project: ",
+  "3dChat": "3D real-time chat room",
+  "videogame": "Unity game: ",
+  "openGLGame": "OpenGL game: "
 }
